@@ -5,8 +5,13 @@
     position: absolute;
 }
 
-@mixin animation($duration, $function, $delay, $iteration) {
-    animation: moveBall $duration $function $delay $iteration;
+@mixin animation($duration, $delay) {
+    // animation: moveBall $duration $function $delay $iteration;
+    animation-name: moveBall;
+    animation-duration: $duration;
+    animation-timing-function: linear;
+    animation-delay: $delay;
+    animation-iteration-count: infinite;
 }
 
 @mixin background ($color) {

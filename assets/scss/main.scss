@@ -4,6 +4,7 @@
 @import "_keyframes.scss";
 // sass --watch assets/scss/main.scss assets/css/style.css
 .container {
+    position: relative;
     .ball1,
     .ball2,
     .ball3 {
@@ -12,16 +13,16 @@
     .ball1 {
         @include background(red);
         top: 0;
-        @include animation(1s, linear, 100ms, infinite)
+        @include animation(1.5s, 100ms)
     }
     .ball2 {
         @include background(blue);
         top: 250px;
-        @include animation(1.5s, linear, 300ms, infinite)
+        @include animation(2s, 300ms)
     }
     .ball3 {
         @include background(yellow);
         top: 500px;
-        @include animation(2s, linear, 500ms, infinite)
+        @include animation(2.5s, 500ms)
     }
 }

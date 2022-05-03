@@ -20,6 +20,9 @@ body {
     left: 0;
   }
 }
+.container {
+  position: relative;
+}
 .container .ball1,
 .container .ball2,
 .container .ball3 {
@@ -31,17 +34,29 @@ body {
 .container .ball1 {
   background-color: red;
   top: 0;
-  animation: moveBall 1s linear 100ms infinite;
+  animation-name: moveBall;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-iteration-count: infinite;
 }
 .container .ball2 {
   background-color: blue;
   top: 250px;
-  animation: moveBall 1.5s linear 300ms infinite;
+  animation-name: moveBall;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
 }
 .container .ball3 {
   background-color: yellow;
   top: 500px;
-  animation: moveBall 2s linear 500ms infinite;
+  animation-name: moveBall;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
