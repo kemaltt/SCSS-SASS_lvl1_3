@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0 5%;
+}
+
+@keyframes moveBall {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 150px);
+  }
+  100% {
+    left: 0;
+  }
+}
+.container .ball1,
+.container .ball2,
+.container .ball3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+}
+.container .ball1 {
+  background-color: red;
+  top: 0;
+  animation: moveBall 1s linear 100ms infinite;
+}
+.container .ball2 {
+  background-color: blue;
+  top: 250px;
+  animation: moveBall 1.5s linear 300ms infinite;
+}
+.container .ball3 {
+  background-color: yellow;
+  top: 500px;
+  animation: moveBall 2s linear 500ms infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

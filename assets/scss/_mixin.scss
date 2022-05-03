@@ -1,0 +1,14 @@
+@mixin ballStyle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@mixin animation($duration, $function, $delay, $iteration) {
+    animation: moveBall $duration $function $delay $iteration;
+}
+
+@mixin background ($color) {
+    background-color: $color;
+}

@@ -1,0 +1,11 @@
+@keyframes moveBall {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 150px);
+    }
+    100% {
+        left: 0;
+    }
+}
